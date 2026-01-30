@@ -1,17 +1,17 @@
-# becraft-sdk Example
+# becraft-sdk サンプル
 
-Example applications demonstrating [becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) usage.
+[becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) の使用方法を示すサンプルアプリケーション集です。
 
-## Examples
+## サンプル一覧
 
-| Directory                          | Description                   | Tech Stack                             |
-| ---------------------------------- | ----------------------------- | -------------------------------------- |
-| [tanstack-start](./tanstack-start) | Full-stack React app with SSR | React 19, TanStack Start, Tailwind CSS |
+| ディレクトリ                       | 説明                              | 技術スタック                           |
+| ---------------------------------- | --------------------------------- | -------------------------------------- |
+| [tanstack-start](./tanstack-start) | SSR対応のフルスタックReactアプリ | React 19, TanStack Start, Tailwind CSS |
 
-## Getting Started
+## はじめに
 
-Each example is a standalone application. Navigate to the example directory and follow the README instructions.
+各サンプルは独立したアプリケーションです。サンプルのディレクトリに移動し、README の手順に従ってください。
 
-## License
+## ライセンス
 
 MIT
