@@ -8,7 +8,7 @@ TanStack Start による SSR 対応のフルスタック React アプリケー�
 
 - React 19 + TanStack Start（SSR）
 - TanStack Router（ファイルベースルーティング + 自動ルートツリー生成）
-- Tailwind CSS **v3** + tailwindcss-animate
+- Tailwind CSS **v4**（Vite プラグイン統合）
 - shadcn/ui（Button, Card, Select）
 - Vite 7
 
@@ -49,11 +49,12 @@ src/
 
 ## TanStack Start 固有の注意事項
 
-### Tailwind CSS v3
+### Tailwind CSS v4
 
-- `tailwind.config.js` でテーマを定義（v4 の `@theme` 構文ではない）
-- `postcss.config.js` で Tailwind + autoprefixer を統合
-- `tailwindcss-animate` プラグインで Radix UI アニメーション対応
+- `@import 'tailwindcss'` / `@plugin` / `@theme inline` 構文を使用（v3 の `@tailwind` ディレクティブではない）
+- `@tailwindcss/vite` プラグインとして `vite.config.ts` で統合
+- `tailwind.config.js` / `postcss.config.js` は存在しない — テーマ定義は `index.css` 内の `@theme inline` ブロック
+- カスタムユーティリティは `@utility` ディレクティブで定義（tailwindcss-animate の代替）
 - shadcn/ui 設定: `components.json`
 
 ### サーバーサイド API

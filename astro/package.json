@@ -37,7 +37,7 @@
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.1.0",
+    "@tailwindcss/vite": "^4.1.18",
     "@types/jsdom": "^21.1.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
@@ -50,7 +50,7 @@
     "globals": "^16.0.0",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
-    "tailwindcss": "^4.1.0",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.6.0",
     "typescript-eslint": "^8.20.0"
   }
