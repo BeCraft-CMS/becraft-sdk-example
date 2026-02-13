@@ -44,10 +44,11 @@ src/
 
 ### Tailwind CSS v4
 
-- `@import 'tailwindcss'` / `@plugin` / `@theme` 構文を使用（v3 の `@tailwind` ディレクティブではない）
+- `@import 'tailwindcss'` / `@plugin` / `@theme inline` 構文を使用（v3 の `@tailwind` ディレクティブではない）
 - `@tailwindcss/vite` プラグインとして `astro.config.ts` で統合
-- `tailwind.config.js` は存在しない — テーマ定義は `global.css` 内の `@theme` ブロック
+- `tailwind.config.js` は存在しない — テーマ定義は `global.css` 内の `@theme inline` ブロック
 - カスタムユーティリティは `@utility` ディレクティブで定義
+- shadcn/ui 設定: `components.json`
 
 ### React Islands
 
