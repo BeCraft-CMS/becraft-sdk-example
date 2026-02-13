@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-becraft-sdk の使用方法を示すサンプルアプリケーション集。各サブディレクトリが独立したアプリケーション。
+@becraft/sdk の使用方法を示すサンプルアプリケーション集。各サブディレクトリが独立したアプリケーション。
 
 ## リポジトリ構成
 
@@ -26,7 +26,7 @@ tanstack-start/  — TanStack Start + React 19（SSR）
 - strict モード有効
 - パスエイリアス: `@/*` → `./src/*`
 
-### becraft-sdk
+### @becraft/sdk
 
 - `BeCraftClient` でコンテンツ・カテゴリ・タグの API を呼び出す
 - API キーはサーバーサイドのみで使用（ブラウザに公開しない）

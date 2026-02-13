@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import type { ApiContentResponse, Category, Tag } from 'becraft-sdk';
+import type { ApiContentResponse, Category, Tag } from '@becraft/sdk';
 import { isSortOption, sortArticles } from '../utils';
 import type { SortOption } from '../types';
 import { ArticleCard } from './ArticleCard';

@@ -1,4 +1,4 @@
-import { BeCraftClient } from 'becraft-sdk';
+import { BeCraftClient } from '@becraft/sdk';
 
 // Server-only environment variables (no VITE_ prefix)
 const baseUrl = process.env.BECRAFT_API_URL;

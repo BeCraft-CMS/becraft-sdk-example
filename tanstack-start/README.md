@@ -1,6 +1,6 @@
 # TanStack Start サンプル
 
-[becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) を使用した SSR 対応のフルスタック React アプリケーション。
+[@becraft/sdk](https://www.npmjs.com/package/@becraft/sdk) を使用した SSR 対応のフルスタック React アプリケーション。
 
 ## 技術スタック
 

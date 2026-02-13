@@ -1,4 +1,4 @@
-import { BeCraftHTMLRenderer, type ContentNode } from 'becraft-sdk';
+import { BeCraftHTMLRenderer, type ContentNode } from '@becraft/sdk';
 
 type ArticleContentProps = {
   nodes: ContentNode[];

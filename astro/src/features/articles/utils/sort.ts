@@ -1,4 +1,4 @@
-import type { ApiContentResponse } from 'becraft-sdk';
+import type { ApiContentResponse } from '@becraft/sdk';
 import type { SortOption } from '../types';
 
 export const sortOptions: { value: SortOption; label: string }[] = [

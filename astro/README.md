@@ -1,13 +1,13 @@
 # Astro サンプル
 
-[becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) を使用した Astro アプリケーション。静的ビルドと React Islands アーキテクチャで構成されています。
+[@becraft/sdk](https://www.npmjs.com/package/@becraft/sdk) を使用した Astro アプリケーション。静的ビルドと React Islands アーキテクチャで構成されています。
 
 ## 技術スタック
 
 - **フレームワーク**: Astro 5（静的ビルド）
 - **UI Islands**: React 19（`@astrojs/react`）
 - **スタイリング**: Tailwind CSS v4 + shadcn/ui（Select）
-- **コンテンツ描画**: becraft-sdk `BeCraftHTMLRenderer`（React Island）
+- **コンテンツ描画**: @becraft/sdk `BeCraftHTMLRenderer`（React Island）
 
 ## 機能
 
@@ -97,9 +97,9 @@ src/
     └── global.css                # Tailwind CSS v4 + テーマ CSS 変数
 ```
 
-## becraft-sdk の使用例
+## @becraft/sdk の使用例
 
-このサンプルでは、以下の becraft-sdk 機能を使用しています：
+このサンプルでは、以下の @becraft/sdk 機能を使用しています：
 
 - `BeCraftClient` — コンテンツ・カテゴリ・タグの API クライアント
 - `parseHtmlOnServer` — `BeCraftHTMLRenderer` 用のサーバーサイド HTML パース

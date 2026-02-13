@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import type { ApiContentResponse } from 'becraft-sdk';
+import type { ApiContentResponse } from '@becraft/sdk';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
 type ArticleCardProps = {

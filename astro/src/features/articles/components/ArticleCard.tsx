@@ -1,4 +1,4 @@
-import type { ApiContentResponse } from 'becraft-sdk';
+import type { ApiContentResponse } from '@becraft/sdk';
 
 type ArticleCardProps = {
   article: ApiContentResponse;

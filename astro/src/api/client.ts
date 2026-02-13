@@ -1,4 +1,4 @@
-import { BeCraftClient } from 'becraft-sdk';
+import { BeCraftClient } from '@becraft/sdk';
 
 const baseUrl = import.meta.env.BECRAFT_API_URL;
 const apiKey = import.meta.env.BECRAFT_API_KEY;

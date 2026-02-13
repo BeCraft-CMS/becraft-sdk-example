@@ -1,4 +1,4 @@
-import type { Category, Tag } from 'becraft-sdk';
+import type { Category, Tag } from '@becraft/sdk';
 import { Button } from '@/components/ui/button';
 
 type ArticleFilterProps = {

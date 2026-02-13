@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
-import { BeCraftHTMLRenderer, type ApiContentResponse, type ContentNode } from 'becraft-sdk';
+import { BeCraftHTMLRenderer, type ApiContentResponse, type ContentNode } from '@becraft/sdk';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { getArticleWithNodes } from '@/api/articles.server';

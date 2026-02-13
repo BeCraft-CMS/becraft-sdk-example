@@ -1,6 +1,6 @@
 import { createServerFn } from '@tanstack/react-start';
-import { parseHtmlOnServer } from 'becraft-sdk/server';
-import type { ContentNode } from 'becraft-sdk';
+import { parseHtmlOnServer } from '@becraft/sdk/server';
+import type { ContentNode } from '@becraft/sdk';
 import { client } from './client.server';
 
 type GetArticlesParams = {

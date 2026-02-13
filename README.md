@@ -1,6 +1,6 @@
-# becraft-sdk サンプル
+# @becraft/sdk サンプル
 
-[becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) の使用方法を示すサンプルアプリケーション集です。
+[@becraft/sdk](https://www.npmjs.com/package/@becraft/sdk) の使用方法を示すサンプルアプリケーション集です。
 
 ## サンプル一覧
 

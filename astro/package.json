@@ -23,9 +23,9 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
+    "@becraft/sdk": "^0.1.2",
     "@radix-ui/react-select": "^2.2.6",
     "astro": "^5.5.0",
-    "becraft-sdk": "github:BeCraft-CMS/becraft-sdk#v0.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "jsdom": "^26.1.0",
