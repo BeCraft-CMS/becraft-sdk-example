@@ -1,7 +1,7 @@
 {
-  "name": "becraft-sdk-example",
+  "name": "becraft-sdk-example-astro",
   "version": "0.0.0",
-  "description": "A sample application demonstrating becraft-sdk usage with React and TanStack Start",
+  "description": "A sample application demonstrating becraft-sdk usage with Astro and React Islands",
   "type": "module",
   "repository": {
     "type": "git",
@@ -13,20 +13,19 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "start": "node .output/server/index.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write ."
   },
   "dependencies": {
+    "@astrojs/react": "^4.2.0",
     "@becraft/sdk": "^0.1.2",
     "@radix-ui/react-select": "^2.2.6",
-    "@radix-ui/react-slot": "^1.1.1",
-    "@tanstack/react-router": "^1.150.0",
-    "@tanstack/react-start": "^1.150.0",
+    "astro": "^5.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "jsdom": "^26.1.0",
@@ -38,26 +37,21 @@
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@tailwindcss/typography": "^0.5.19",
-    "@tanstack/router-plugin": "^1.150.0",
-    "@types/jsdom": "^27.0.0",
-    "@types/node": "^22.10.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/jsdom": "^21.1.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "autoprefixer": "^10.4.20",
     "eslint": "^9.24.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.0.0",
-    "postcss": "^8.4.49",
     "prettier": "^3.4.2",
-    "tailwindcss": "^3.4.17",
-    "tailwindcss-animate": "^1.0.7",
+    "prettier-plugin-astro": "^0.14.1",
+    "tailwindcss": "^4.1.0",
     "typescript": "^5.6.0",
-    "typescript-eslint": "^8.20.0",
-    "vite": "^7.0.0",
-    "vite-tsconfig-paths": "^4.3.2"
+    "typescript-eslint": "^8.20.0"
   }
 }

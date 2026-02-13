@@ -14,7 +14,10 @@ export const isSortOption = (value: unknown): value is SortOption => {
   return typeof value === 'string' && validSortValues.has(value);
 };
 
-export const sortArticles = (articles: ApiContentResponse[], sort: SortOption | undefined): ApiContentResponse[] => {
+export const sortArticles = (
+  articles: ApiContentResponse[],
+  sort: SortOption | undefined,
+): ApiContentResponse[] => {
   const sorted = [...articles];
   switch (sort) {
     case 'oldest':

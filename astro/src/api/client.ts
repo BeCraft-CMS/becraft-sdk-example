@@ -1,8 +1,7 @@
 import { BeCraftClient } from '@becraft/sdk';
 
-// Server-only environment variables (no VITE_ prefix)
-const baseUrl = process.env.BECRAFT_API_URL;
-const apiKey = process.env.BECRAFT_API_KEY;
+const baseUrl = import.meta.env.BECRAFT_API_URL;
+const apiKey = import.meta.env.BECRAFT_API_KEY;
 
 if (!baseUrl) {
   console.warn('BECRAFT_API_URL must be set');

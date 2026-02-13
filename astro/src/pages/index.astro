@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { ArticleList } from '@/features/articles';
+import { getArticles, getCategories, getTags } from '@/api/articles';
+
+const [articles, categories, tags] = await Promise.all([getArticles(), getCategories(), getTags()]);
+---
+
+<BaseLayout
+  title="記事一覧 | becraft-sdk Example"
+  description="becraft-sdk サンプルアプリケーションの記事一覧。"
+>
+  <ArticleList client:load articles={articles} categories={categories} tags={tags} />
+</BaseLayout>

@@ -1,6 +1,4 @@
-import { Link } from '@tanstack/react-router';
 import type { ApiContentResponse } from '@becraft/sdk';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
 type ArticleCardProps = {
   article: ApiContentResponse;
@@ -11,8 +9,8 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
   const hasTags = article.tags && article.tags.length > 0;
 
   return (
-    <Link to="/articles/$articleId" params={{ articleId: article.id }}>
-      <Card className="group h-full overflow-hidden border-border/50 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
+    <a href={`/articles/${article.id}`}>
+      <div className="group h-full overflow-hidden rounded-lg border border-border/50 bg-card text-card-foreground shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
         <div className="aspect-video overflow-hidden bg-muted">
           {article.thumbnail?.url ? (
             <img
@@ -27,16 +25,18 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
             </div>
           )}
         </div>
-        <CardHeader className="pb-2">
-          <CardTitle className="line-clamp-2 text-lg transition-colors group-hover:text-primary">
+        <div className="flex flex-col space-y-1.5 p-6 pb-2">
+          <div className="line-clamp-2 text-lg font-semibold leading-none tracking-tight transition-colors group-hover:text-primary">
             {article.title}
-          </CardTitle>
+          </div>
           {article.publishedAt && (
-            <CardDescription>{new Date(article.publishedAt).toLocaleDateString()}</CardDescription>
+            <div className="text-sm text-muted-foreground">
+              {new Date(article.publishedAt).toLocaleDateString('ja-JP')}
+            </div>
           )}
-        </CardHeader>
+        </div>
         {(hasCategories || hasTags) && (
-          <CardContent className="pt-0">
+          <div className="p-6 pt-0">
             <div className="flex flex-wrap gap-1">
               {article.categories?.map((category) => (
                 <span
@@ -55,9 +55,9 @@ export const ArticleCard = ({ article }: ArticleCardProps) => {
                 </span>
               ))}
             </div>
-          </CardContent>
+          </div>
         )}
-      </Card>
-    </Link>
+      </div>
+    </a>
   );
 };
