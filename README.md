@@ -9,10 +9,6 @@
 | [astro](./astro)                   | 静的ビルド + React Islands        | Astro 5, React 19, Tailwind CSS        |
 | [tanstack-start](./tanstack-start) | SSR対応のフルスタックReactアプリ | React 19, TanStack Start, Tailwind CSS |
 
-## はじめに
-
-各サンプルは独立したアプリケーションです。サンプルのディレクトリに移動し、README の手順に従ってください。
-
 ## ライセンス
 
 MIT
