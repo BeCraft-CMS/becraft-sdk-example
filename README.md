@@ -6,6 +6,7 @@
 
 | ディレクトリ                       | 説明                              | 技術スタック                           |
 | ---------------------------------- | --------------------------------- | -------------------------------------- |
+| [astro](./astro)                   | 静的ビルド + React Islands        | Astro 5, React 19, Tailwind CSS        |
 | [tanstack-start](./tanstack-start) | SSR対応のフルスタックReactアプリ | React 19, TanStack Start, Tailwind CSS |
 
 ## はじめに
