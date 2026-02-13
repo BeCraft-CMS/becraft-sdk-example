@@ -1,90 +1,90 @@
-# TanStack Start Example
+# TanStack Start サンプル
 
-A full-stack React application using [becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) with server-side rendering.
+[becraft-sdk](https://github.com/BeCraft-CMS/becraft-sdk) を使用した SSR 対応のフルスタック React アプリケーション。
 
-## Tech Stack
+## 技術スタック
 
-- **Framework**: React 19 + TanStack Start (SSR)
-- **Routing**: TanStack Router
-- **Styling**: Tailwind CSS + shadcn/ui
-- **Build Tool**: Vite
+- **フレームワーク**: React 19 + TanStack Start (SSR)
+- **ルーティング**: TanStack Router
+- **スタイリング**: Tailwind CSS + shadcn/ui
+- **ビルドツール**: Vite
 
-## Features
+## 機能
 
-- Article list display
-- Article detail page
-- Filtering by category and tags
-- Sorting (newest, oldest, by title)
-- Dynamic meta tags (title)
-- Server-side rendering (SSR)
+- 記事一覧の表示
+- 記事詳細ページ
+- カテゴリ・タグによるフィルタリング
+- ソート機能（新しい順、古い順、タイトル順）
+- 動的メタタグ（title）
+- サーバーサイドレンダリング（SSR）
 
-## Setup
+## セットアップ
 
-### Install Dependencies
+### 依存パッケージのインストール
 
 ```bash
 pnpm install
 ```
 
-### Configure Environment Variables
+### 環境変数の設定
 
-Copy `.env.example` to `.env` and configure the environment variables:
+`.env.example` を `.env` にコピーして環境変数を設定してください：
 
 ```bash
 cp .env.example .env
 ```
 
-| Variable | Description |
-|----------|-------------|
-| `BECRAFT_API_URL` | BeCraft API base URL |
-| `BECRAFT_API_KEY` | BeCraft API key (starts with `bcak-`) |
+| 変数名            | 説明                                 |
+| ----------------- | ------------------------------------ |
+| `BECRAFT_API_URL` | BeCraft API のベース URL             |
+| `BECRAFT_API_KEY` | BeCraft API キー（`bcak-` で始まる） |
 
-**Note**: The API key is only used server-side and is not exposed to the browser.
+**注意**: API キーはサーバーサイドでのみ使用され、ブラウザには公開されません。
 
-### Start Development Server
+### 開発サーバーの起動
 
 ```bash
 pnpm dev
 ```
 
-### Build
+### ビルド
 
 ```bash
 pnpm build
 ```
 
-### Start Production Server
+### プロダクションサーバーの起動
 
 ```bash
 pnpm start
 ```
 
-## Directory Structure
+## ディレクトリ構成
 
 ```
 src/
-├── api/                # API client (server-side only)
-│   ├── client.server.ts    # BeCraftClient instance
-│   └── articles.server.ts  # Article-related server functions
-├── components/         # Shared UI components
-│   ├── layout/        # Layout components
+├── api/                          # サーバーサイド API
+│   ├── client.server.ts          # BeCraftClient インスタンス
+│   └── articles.server.ts        # 記事関連のサーバー関数
+├── components/                   # 共通 UI コンポーネント
+│   ├── layout/                   # レイアウトコンポーネント
 │   │   └── Header.tsx
-│   ├── ui/            # shadcn/ui components
-│   └── NotFound.tsx   # 404 page
-├── features/          # Feature modules
-│   └── articles/      # Articles feature
-│       ├── components/  # Article-related components
+│   ├── ui/                       # shadcn/ui コンポーネント
+│   └── NotFound.tsx              # 404 ページ
+├── features/                     # 機能モジュール
+│   └── articles/                 # 記事機能
+│       ├── components/           # 記事関連コンポーネント
 │       │   ├── ArticleCard.tsx
 │       │   └── ArticleFilter.tsx
-│       ├── types.ts     # Type definitions
-│       ├── utils.ts     # Utility functions
-│       └── index.ts     # Exports
-├── lib/               # Common utilities
-├── routes/            # Page components (TanStack Router)
-│   ├── __root.tsx     # Root layout (HTML structure)
-│   ├── index.tsx      # Article list page
+│       ├── types.ts              # 型定義
+│       ├── utils.ts              # ユーティリティ関数
+│       └── index.ts              # エクスポート
+├── lib/                          # 共通ユーティリティ
+├── routes/                       # ページコンポーネント (TanStack Router)
+│   ├── __root.tsx                # ルートレイアウト (HTML 構造)
+│   ├── index.tsx                 # 記事一覧ページ
 │   └── articles/
-│       └── $articleId.tsx  # Article detail page
-├── router.tsx         # Router configuration
-└── index.css          # Global styles
+│       └── $articleId.tsx        # 記事詳細ページ
+├── router.tsx                    # ルーター設定
+└── index.css                     # グローバルスタイル
 ```
