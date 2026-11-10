@@ -27,6 +27,8 @@
 pnpm install
 ```
 
+@becraft/sdk 0.3.0 以降が必要です（配信 API の `/api/v1` に対応したバージョン）。サーバーサイドでの HTML 解析（`parseHtmlOnServer`）には `linkedom` を使います。
+
 ### 環境変数の設定
 
 `.env.example` を `.env` にコピーして環境変数を設定してください：
@@ -35,10 +37,10 @@ pnpm install
 cp .env.example .env
 ```
 
-| 変数名            | 説明                                 |
-| ----------------- | ------------------------------------ |
-| `BECRAFT_API_URL` | BeCraft API のベース URL             |
-| `BECRAFT_API_KEY` | BeCraft API キー（`bcak-` で始まる） |
+| 変数名            | 説明                                                                     |
+| ----------------- | ------------------------------------------------------------------------ |
+| `BECRAFT_API_URL` | BeCraft のオリジン（例: `https://api.becraft.io`）。`/api/v1` は付けない |
+| `BECRAFT_API_KEY` | BeCraft API キー（`bcak-` で始まる）                                     |
 
 **注意**: API キーはビルド時のサーバーサイドでのみ使用され、ブラウザには公開されません。
 
