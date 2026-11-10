@@ -30,7 +30,8 @@ tanstack-start/  — TanStack Start + React 19（SSR）
 
 - `BeCraftClient` でコンテンツ・カテゴリ・タグの API を呼び出す
 - API キーはサーバーサイドのみで使用（ブラウザに公開しない）
-- 環境変数: `BECRAFT_API_URL`, `BECRAFT_API_KEY`
+- 環境変数: `BECRAFT_API_URL`, `BECRAFT_API_KEY`（`BECRAFT_API_URL` はオリジンのみ。SDK が `/api/v1/...` を付与する）
+- サーバーサイドの HTML 解析（`@becraft/sdk/server`）は `linkedom` に依存する（`jsdom` は使わない）
 
 ### ディレクトリ構成パターン（feature-based）
 
